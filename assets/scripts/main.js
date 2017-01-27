@@ -13,7 +13,7 @@ $(function(){
 		},'json')
 		.fail(function(data) {
 		  loading.addClass('error');
-		  loading.html(data.message);
+		  loading.html(data.responseJSON.message);
 		});
 	});
 });
