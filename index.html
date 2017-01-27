@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-br">
+<header>
+	<title>StackOverflow API Test</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Open Sans Font (optional) -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+	<!-- Main Files -->
+	<link href="assets/styles/style.css" rel="stylesheet">
+	<script src="assets/scripts/main.js"></script>
+</header>
+<body>
+	<div class="container">
+
+		<section>
+			<h1>PHP - StackOverflow</h1>
+			<button id="persist">Persistir dados</button>
+		</section>
+		<section id="busca" class="box">
+			<h2>Busca na API</h2>
+			
+			<form action="v1/question" method="GET" class="default">
+				<div class="row">
+					<div class="col-3">
+						<label for="page">Page</label>
+						<input type="text" name="page" id="page">
+					</div>
+					<div class="col-3">
+						<label for="rpp">RPP</label>
+						<input type="text" name="rpp" id="rpp">
+					</div>
+					<div class="col-3">
+						<label for="sort">Sort</label>
+						<input type="text" name="sort" id="sort">
+					</div>
+					<div class="col-3">
+						<label for="score">Score</label>
+						<input type="text" name="score" id="score">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 right">
+						<button type="submit">Buscar</button>
+					</div>
+					
+				</div>
+			</form>
+		</section>
+	</div>
+</body>
+
+</html>

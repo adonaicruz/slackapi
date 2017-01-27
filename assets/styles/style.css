@@ -1,0 +1,91 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	padding: 0px;
+	margin: 0px;
+	min-width: 320px;
+	color: #666;
+}
+.row::after{
+	clear: both;
+	display: table;
+	content: " "
+}
+.col,.col-3,.col-12{
+	float: left;
+	width: auto;
+	position: relative;
+    min-height: 1px;
+    padding: 15px;
+    box-sizing: border-box;
+    // margin: 24px 0px;
+}
+.col-3{
+	width: 25%;
+}
+.col-12{
+	width: 100%;
+}
+.right{
+	text-align: right;
+}
+h1,h2{
+	font-style: italic;
+	padding: 15px 0px;
+    margin: 0px;
+}
+section{
+	margin: 25px;
+}
+.container{
+	margin: 25px;
+}
+.loading{
+	display: inline-block;
+	margin: 10px;
+}
+.loading.sucess{
+	color: green;
+}
+.loading.error{
+	color: red;
+}
+
+section.box{
+	background: #e6e6e6;
+	border-bottom: #cecece 2px solid;
+}
+button{
+	background: #0099d7;
+	border: 0px;
+	border-bottom: #0079aa 2px solid;
+	color:#FFF;
+	font-size: 18px;
+	height: 35px;
+	padding: 0 30px;
+	cursor: pointer;
+}
+section#busca{
+	max-width: 800px;
+}
+section#busca button{
+	background: #8ac34e;
+	border-bottom: #6d9b3e 2px solid;
+}
+
+section#busca h2{
+	padding: 15px;
+}
+
+form.default label{
+	display: block;
+	font-size: 20px;
+}
+form.default input{
+	width: 100%;
+	border:none;
+	height: 35px;
+	border-top: #cbcbcb 2px solid;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 4px;
+}
